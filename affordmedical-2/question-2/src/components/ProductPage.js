@@ -11,7 +11,7 @@ const ProductPage = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          http://20.244.56.144/test/products/${productId}
+          `http://20.244.56.144/test/products/${productId}`
         );
         setProduct(response.data);
       } catch (error) {
